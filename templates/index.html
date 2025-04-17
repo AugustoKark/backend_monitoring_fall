@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Monitoreo de Caídas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Sistema de Monitoreo de Caídas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1>Monitoreo de Caídas para Adultos Mayores</h1>
+            <p class="lead">Sistema de backend para la recepción y análisis de datos de aplicaciones de detección de caídas</p>
+        </div>
+    </section>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">📱</div>
+                        <h5 class="card-title">Recepción de Datos</h5>
+                        <p class="card-text">Recopila datos de acelerómetro y eventos de caída de dispositivos móviles de forma segura.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">📊</div>
+                        <h5 class="card-title">Análisis y Visualización</h5>
+                        <p class="card-text">Analiza los datos recopilados y visualiza tendencias para mejorar la detección de caídas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="feature-icon">🚨</div>
+                        <h5 class="card-title">Alertas y Notificaciones</h5>
+                        <p class="card-text">Sistema de alertas en tiempo real para contactos de emergencia cuando se detecta una caída.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3>Documentación de la API</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong>POST /api/device/register</strong>
+                        <p>Registra un nuevo dispositivo en el sistema</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>POST /api/data/accelerometer</strong>
+                        <p>Recibe datos del acelerómetro</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>POST /api/event/fall</strong>
+                        <p>Registra un evento de caída</p>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>POST /api/upload/file</strong>
+                        <p>Recibe archivos de datos</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Estadísticas</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Para ver el dashboard completo con visualizaciones y estadísticas detalladas:</p>
+                        <a href="/dashboard" class="btn btn-primary">Ver Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p>Sistema de Monitoreo de Caídas &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
